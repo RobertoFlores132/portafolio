@@ -250,17 +250,18 @@
   .App {
     text-align: center;
   }
+
   .Navbar{
     position: fixed;
-    z-index: 100;
-    left: 20%;
+    top: 0;
+    box-shadow: 1px 0px 10px black;
+    background-color: #664e88ca;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 40px;
-    font-size: 30px;
-    width: 1200px;
-    height: 5vh;
+    font-size: 20px;
+    width: 100%;
+    height: 7vh;
   }
 
   .Navbar a{
@@ -292,7 +293,7 @@
   .title1{
     margin-top: 0px;
     padding-top: 350px;
-    font-size: 50px;
+    font-size: 35px;
   }
    
   .Home{
@@ -305,7 +306,7 @@
   }
 
   h1{
-    font-size: 100px;
+    font-size: 70px;
     margin-bottom: 150px;
   }
   
@@ -320,8 +321,8 @@
     font-family: 'Roboto', sans-serif;
     background: #664E88;
     color: white;
-    font-size: 25px;
-    padding: 20px 45px 25px 45px;
+    font-size: 15px;
+    padding: 15px 30px 15px 30px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 50px;
@@ -332,7 +333,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    height: 110vh;
+    height: 70vh;
   }
 
   .imagecontainer{
@@ -343,16 +344,16 @@
   }
   
   .Image{
-    width: 600px;
+    width: 500px;
     padding: 0px 0px 100px 0px;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 90px;
   }
   
   .Description{
-    margin: 10px 0px 0px 200px;
+    margin: 150px 0px 0px 200px;
     padding: 0px 0px 0px 20px;
-    font-size: 25px;
-    height: 230px;
+    font-size: 15px;
+    height: 130px;
     border-left: 3px solid #664E88;
     color: #664E88;
     text-align: left;
@@ -360,45 +361,53 @@
     text-decoration: none;
   }
 
+  .Description h1{
+    font-size: 50px;
+  }
+
   .Dots{
     float: left;
     width: 100px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 200px 100px;
+    margin: 100px 0px 0px 0px;
+    padding: 0px 0px 200px 400px;
   }
 
   .About{
     display: grid;
-    font-size: 30px;
+    font-size: 20px;
     height: 200px;
     text-align: justify;
     padding: 0px 40px 100px 650px;
-    margin: 0px 0px 0px 50px;
+    margin: 100px 0px 350px 50px;
   }
   
   .Skill {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    padding-top: 10px;
+    padding-top: 100px;
     padding-bottom: 300px;
     background-color: #664E88;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 140vh;
+    height: 100vh;
   }
   
   .Title{
     margin: 70px 0px 100px 150px;
     padding-left: 20px;
-    font-size: 30px;
+    font-size: 20px;
     color: #A9E4D7;
     line-height: 15px;
     border-left: 3px solid #A9E4D7;
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    height: 170px;
+    height: 120px;
+  }
+
+  .Title h1{
+    font-size: 50px;
   }
   
   .dotcontainer{
@@ -407,16 +416,16 @@
   }
 
   .Dots2{
-    margin-left: 1000px;
-    padding-top: 0px;
+    margin-left: 1400px;
+    padding-top: 30px;
     font-size: 30px;
     width: 130px;
   }
   
   .List {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    margin: 50px 0px 100px 300px;
+    margin: 50px 300px 100px 300px;
     color: white;
   }
   
@@ -462,35 +471,39 @@
   .projectcontainer{
     display: inline-flex;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 90vh;
   }
   
   .my-projects{
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 150px;
     margin-bottom: 0px;
-    margin-top: 100px;
+    margin-top: 150px;
     padding-left: 10px;
     color: #664E88;
     line-height: 15px;
     border-left: 3px solid #664E88;
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    height: 160px;
+    height: 110px;
+  }
+
+  .my-projects h1{
+    font-size: 50px;
   }
 
   .proyect-image1{
     width: 0px;
     height: 0px;
-    margin: 0px 70px 0px 350px;
+    margin: 0px 70px 0px 550px;
     padding: 0px 1400px 0px 0px;
   }
   
   .Proyect1{
-    margin: 70px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     padding-top: 50px;
     padding-bottom: 6px;
-    width: 550px;
+    width: 450px;
   }
   
   .proyect-description{
@@ -498,8 +511,8 @@
     width: 400px;
     height: 150px;
     text-align: justify;
-    margin: 50px 0px 0px 1000px;
-    font-size: 22px;
+    margin: 150px 0px 0px 1050px;
+    font-size: 15px;
   }
   
   .proyect-description h3{
@@ -507,8 +520,8 @@
   }
   
   .proyect-button{
-    margin: 0px 0px 0px 1000px;
-    padding-bottom: 50px;
+    margin: 0px 0px 0px 1050px;
+    padding-bottom: 1000px;
   }
   
   .contact{
@@ -523,13 +536,13 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
   }
   
   .info h3{
     text-align: center;
     color: #664E88;
-    font-size: 40px;
+    font-size: 25px;
   }
   
   .info{
@@ -537,24 +550,27 @@
     font-size: 25px;
     text-align: center;
     margin-left: 0px;
-    margin-right: 300px;
+    margin-right: 400px;
     margin-top: 200px;
     padding-top: 3px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: white;
-    width: 600px;
-    height: 60vh;
+    width: 500px;
+    height: 62vh;
   }
   
   .box2{
     font-family: 'Roboto', sans-serif;
     background: #664E88;
     color: white;
-    padding: 15px 50px 15px 50px;
-    margin-left: 10px;
+    padding: 15px 30px 35px 30px;
+    margin-left: 120px;
+    width: 150px;
+    height: 40px;
     text-align: center;
     border-radius: 50px;
+    font-size: 15px;
     text-decoration: none;
   }
   
@@ -567,14 +583,12 @@
   }
   
   .message{
-    margin-bottom: 40px;
-    margin-left: 115px;
-    margin-right: 100px;
+    margin: 60px 100px 40px 120px;
   }
   
   .form{
-    width: 730px;
-    margin: 100px 160px 0px 0px;
+    width: 530px;
+    margin: 250px 250px 0px 0px;
     padding: 100px 0px 0px 0px;
   }
 
@@ -590,6 +604,19 @@
     margin-top: 180px;
     width: 100%;
     padding: 5px 0px 5px 0px;
+  }
+
+  input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    width: 250px;
+  }
+
+  ::placeholder{
+    font-size: 15px;
   }
 
   .menu{

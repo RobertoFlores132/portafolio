@@ -8,7 +8,7 @@ const Home = () => {
         <div className='menu' >
             <i className="fa-solid fa-bars"></i>
         </div>
-        <nav  className='Navbar'>
+        <nav className='Navbar'>
             <Link to='Home' spy={true} smooth={true} offset={50} duration={500}>Home</Link>
             <Link to='Aboutme' spy={true} smooth={true} offset={50} duration={500}>Sobre mi</Link>
             <Link to='Skills' spy={true} smooth={true} offset={50} duration={500}>Habilades</Link>
