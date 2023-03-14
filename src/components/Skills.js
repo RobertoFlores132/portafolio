@@ -9,7 +9,7 @@ const Skills = () => {
                 <h3>Educación y</h3>
                 <h1>Habilidades</h1>
             </div> 
-                <div>
+                <div className='dotcontainer'>
                     <img className='Dots2' src={Image} alt="Dots" />
                 </div>
             <div className='List'>

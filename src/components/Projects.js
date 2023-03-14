@@ -3,7 +3,7 @@ import Proyect1 from '../Images/Proyect1.png'
 
 const Projects = () => {
     return (
-        <div>
+        <div className='projectcontainer'>
             <div className='my-projects'>
                 <h3>Mis</h3>
                 <h1>Proyectos</h1>
@@ -18,8 +18,8 @@ const Projects = () => {
                 </p>
            </div>
            <div className='proyect-button'>
-           <a href='https://fervent-blackwell-cc377f.netlify.app/' className='box'>Visitar Sitio</a>
-           <a href='https://github.com/RobertoFlores132/RickAndMortyAPI' className='box'>Ver repositorio</a>
+           <a href='https://fervent-blackwell-cc377f.netlify.app/' target="_blank" rel="noopener noreferrer" className='box'>Visitar Sitio</a>
+           <a href='https://github.com/RobertoFlores132/RickAndMortyAPI' target="_blank" rel="noopener noreferrer" className='box'>Ver repositorio</a>
            </div>
         </div>
     );
