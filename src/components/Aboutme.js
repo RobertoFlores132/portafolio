@@ -9,13 +9,14 @@ const Aboutme = () => {
             <div className='imagecontainer'>
                 <img className='Image' src={Image} alt="Roberto Flores" />
             </div>
+            <div className='Dots'>
+                <img className='Dot' src={Image2} alt="Dot" />
+            </div>
             <div className='Description'>
                 <h3>¡HOLA! SOY</h3>
                 <h1>ROBERTO FLORES</h1>
             </div>
-            <div className='Dots'>
-                <img className='Dot' src={Image2} alt="Dot" />
-            </div>
+            
             <div className='About'>
                 <p className='About1'> Desarrollador web Fullstack, gamer y streamer, me gusta la tecnología y
                     soy aficionado de la música y el basquetbol, manejo HTML, CSS, Javascript, React y NodeJS,

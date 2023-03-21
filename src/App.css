@@ -211,7 +211,8 @@
   font-family: 'Roboto', sans-serif;
   background: #664E88;
   color: white;
-  padding: 15px 50px 15px 50px;
+  padding: 10px 10px 10px 10px;
+  width: 150px;
   margin-left: 70px;
   text-align: center;
   border-radius: 50px;
@@ -228,6 +229,16 @@
 
 .message{
   margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+input{
+  border: none;
+  border-bottom: 1px solid black;
+  margin-right: 100px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  width: 250px;
 }
 
 .form{
@@ -330,28 +341,27 @@
   }
 
   .Profile{
+    margin-top: 20px;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-end;
     height: 70vh;
   }
 
   .imagecontainer{
-    width: 500px;
-    height: 200px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 0px;
   }
   
   .Image{
-    width: 500px;
-    padding: 0px 0px 100px 0px;
-    margin: 0px 0px 0px 90px;
+    width: 600px;
+    margin: 0px 800px 0px 0px;
+    padding-bottom: 150px;
   }
   
   .Description{
-    margin: 150px 0px 0px 200px;
-    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 600px;
     font-size: 15px;
     height: 130px;
     border-left: 3px solid #664E88;
@@ -360,42 +370,53 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
   }
+  
+  .About{
+    margin: 0px 85px 0px 810px;
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    font-size: 20px;
+    height: 200px;
+    width: 550px;
+    text-align: justify;
+  }
 
   .Description h1{
     font-size: 50px;
   }
 
   .Dots{
-    float: left;
-    width: 100px;
-    margin: 100px 0px 0px 0px;
-    padding: 0px 0px 200px 400px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    height: 0px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
-  .About{
-    display: grid;
-    font-size: 20px;
-    height: 200px;
-    text-align: justify;
-    padding: 0px 40px 100px 650px;
-    margin: 100px 0px 350px 50px;
+  .Dot{
+    width: 130px;
+    padding-right: 50px;
   }
-  
+
   .Skill {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 300px;
     background-color: #664E88;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    padding-bottom: 400px;
+    height: 85vh;
+    width: 100%;
   }
   
   .Title{
-    margin: 70px 0px 100px 150px;
+    margin: 50px 0px 50px 150px;
     padding-left: 20px;
     font-size: 20px;
     color: #A9E4D7;
@@ -403,58 +424,123 @@
     border-left: 3px solid #A9E4D7;
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    height: 120px;
+    height: 110px;
   }
 
   .Title h1{
     font-size: 50px;
   }
   
-  .dotcontainer{
-    height: 270px;
-    width: 100px;
+  .dotcontainer{ 
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin-right: 50px;
+    height: 70px;
+    width: 100%;
+   
   }
 
   .Dots2{
-    margin-left: 1400px;
-    padding-top: 30px;
+    padding-top: 120px;
     font-size: 30px;
     width: 130px;
   }
   
-  .List {
+  .List{
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
-    margin: 50px 300px 100px 300px;
+    width: 100%;
     color: white;
   }
   
   .Education {
-    float: left;
-    padding: 0px 0px 0px 200px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     line-height: 10px;
+    height: 0px;
+    width: 350px;
+  }
+
+  .Education p{
+    margin-top: 0px;
+    text-indent: 100px;
+  }
+
+  .icon-edu{
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 30px;
+    width: 290px;
+    margin-bottom: 0px;
+  }
+
+  .icon1{
+    width: 70px;
   }
   
   .Languaje{
-    float: left;
-    padding: 0px 0px 0px 200px;
+    padding: 0px 0px 0px 0px;
+    margin: 250px 0px 0px -350px;
     line-height: 10px;
+    height: 0px;
+    width: 180px;
+  }
+
+  .icon-leng{
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 30px;
+    width: 180px;
+    margin-bottom: 0px;
+  }
+
+  .Languaje p{
+    margin-top: 0px;
+    text-indent: 95px;
+  }
+
+  .icon2{
+    width: 70px;
   }
   
   .Technologies{
-    float: left;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 700px;
-    line-height: 10px;
+    margin: 0px 50px 500px 350px;
+    padding: 0px 0px 0px 0px;
+    line-height: 20px;
+    width: 50px;
+    height: 0px;
+  }
+
+  .icon-tec{
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 30px;
+    width: 220px;
+    margin-bottom: 0px;
+  }
+
+  .icon3{
+    width: 70px;
+  }
+
+  .Technologies p{
+    margin-top: 0px;
+    text-indent: 95px;
   }
   
   .bar{
     padding: 3px;
     width: 150px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 90px;
     height: 10px;
     background: #A9E4D7;
     border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
   }
   
   .progress {
@@ -469,9 +555,10 @@
   }
 
   .projectcontainer{
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     height: 90vh;
+    width: 100%;
   }
   
   .my-projects{
@@ -486,6 +573,7 @@
     font-family: 'Roboto', sans-serif;
     text-align: left;
     height: 110px;
+    width: 100%;
   }
 
   .my-projects h1{
@@ -495,8 +583,8 @@
   .proyect-image1{
     width: 0px;
     height: 0px;
-    margin: 0px 70px 0px 550px;
-    padding: 0px 1400px 0px 0px;
+    margin: 0px 70px 0px 450px;
+    padding: 0px 0px 0px 0px;
   }
   
   .Proyect1{
@@ -511,7 +599,7 @@
     width: 400px;
     height: 150px;
     text-align: justify;
-    margin: 150px 0px 0px 1050px;
+    margin: 150px 0px 0px 450px;
     font-size: 15px;
   }
   
@@ -520,7 +608,7 @@
   }
   
   .proyect-button{
-    margin: 0px 0px 0px 1050px;
+    margin: 0px 0px 0px 950px;
     padding-bottom: 1000px;
   }
   
@@ -528,6 +616,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     padding-top: 10px;
     padding-bottom: 100px;
@@ -536,7 +625,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 95vh;
+    height: 85vh;
   }
   
   .info h3{
@@ -550,14 +639,14 @@
     font-size: 25px;
     text-align: center;
     margin-left: 0px;
-    margin-right: 400px;
-    margin-top: 200px;
+    margin-right: 0px;
+    margin-top: 150px;
     padding-top: 3px;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 20px;
     background-color: white;
     width: 500px;
-    height: 62vh;
+    height: 60vh;
   }
   
   .box2{
@@ -588,12 +677,8 @@
   
   .form{
     width: 530px;
-    margin: 250px 250px 0px 0px;
+    margin: 120px 100px 0px 0px;
     padding: 100px 0px 0px 0px;
-  }
-
-  .form img{
-    width: 0px;
   }
   
   .copy{
