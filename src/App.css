@@ -60,7 +60,7 @@
 }
 
 .Dots{
-  float: left;
+  float: right;
   margin-top: 15px;
   width: 100px;
   padding-left: 0px;
@@ -78,6 +78,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 200px;
   height: 103vh;
 }
 
@@ -93,7 +94,7 @@
 }
 
 .Dots2{
-  float: left;
+  float: right;
   margin-left: 70px;
   font-size: 30px;
   width: 80px;
@@ -114,20 +115,68 @@
   line-height: 10px;
 }
 
+.Education p{
+  text-indent: 85px;
+  margin-top: 0px;
+}
+
+.icon-edu{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.icon1{
+  width: 70px;
+}
+
 .Languaje{
   text-align: justify;
-  margin-top: 10px;
+  margin-top:20px;
+  width: 250px;
   line-height: 10px;
+}
+
+.Languaje p{
+  text-indent: 85px;
+  margin-top: 0px;
+}
+
+.icon-leng{
+  display: flex;
+  justify-content: space-between;
+  width: 155px;
+}
+
+.icon2{
+  width: 70px;
 }
 
 .Technologies{
   text-align: justify;
-  margin-top: 10px;
+  margin-top: 50px;
   line-height: 10px;
+}
+
+.Technologies p{
+  text-indent: 85px;
+  margin-top: 0px;
+}
+
+.icon-tec{
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+}
+
+.icon3{
+  width: 70px;
 }
 
 .bar{
   padding: 3px;
+  margin-bottom: 10px;
+  margin-left: 80px;
   width: 150px;
   height: 10px;
   background: #A9E4D7;
