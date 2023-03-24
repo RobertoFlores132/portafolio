@@ -32,8 +32,10 @@ const Contact = () => {
             <div className='form-img'>
                 <img className='form' src={Form} alt="" />
             </div>
+            <div className='copycontainer'>
             <div className='copy'>
                 <h4>Copyright © 2022 Todos los derechos reservados</h4>
+            </div>
             </div>
         </form>
         

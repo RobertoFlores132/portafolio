@@ -72,19 +72,22 @@
 }
 
 .Skill {
-  padding-top: 10px;
-  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-top: 30px;
   background-color: #664E88;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 200px;
-  height: 103vh;
+  padding-bottom: 100px;
+  height: auto;
+  width: 100%;
 }
 
 .Title{
-  float: left;
-  margin-left: 30px;
+  margin-left: auto;
   padding-left: 10px;
   color: #A9E4D7;
   line-height: 15px;
@@ -110,8 +113,11 @@
 
 .Education {
   float: left;
+  width: auto;
+  height: auto;
   text-align: justify;
   margin-top: 10px;
+  margin-left: 30px;
   line-height: 10px;
 }
 
@@ -132,6 +138,9 @@
 
 .Languaje{
   text-align: justify;
+  width: auto;
+  height: auto;
+  margin-left: 30px;
   margin-top:20px;
   width: 250px;
   line-height: 10px;
@@ -154,6 +163,9 @@
 
 .Technologies{
   text-align: justify;
+  width: 5px;
+  margin-left: 30px;
+  height: auto;
   margin-top: 50px;
   line-height: 10px;
 }
@@ -236,7 +248,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 .info h3{
@@ -293,6 +305,13 @@ input{
 .form{
   width: 350px;
   margin-top: 40px;
+}
+
+.copycontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .copy{
@@ -362,9 +381,9 @@ input{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 105vh;
+    height: auto;
   }
-
+  
   h1{
     font-size: 70px;
     margin-bottom: 150px;
@@ -372,7 +391,11 @@ input{
   
   .front {
     margin-top: 0px;
+    display: flex;
+    flex-direction: column;
     line-height: 50px;
+    padding-bottom: 300px;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     color: white;
   }
@@ -387,30 +410,40 @@ input{
     margin-right: 10px;
     border-radius: 50px;
     text-decoration: none;
+    height: auto;
+  }
+
+  .linkedinbttn{
+    height: auto;
   }
 
   .Profile{
     margin-top: 20px;
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     height: 70vh;
   }
 
   .imagecontainer{
     width: 100%;
-    height: 0px;
+    height: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: left;
   }
   
   .Image{
     width: 600px;
-    margin: 0px 800px 0px 0px;
+    padding: 0px 0px 0px 100px;
     padding-bottom: 150px;
   }
   
   .Description{
-    margin: 0px 0px 0px 600px;
+    justify-content: flex-start;
+    margin: 0px 150px 0px 750px;
+    padding: 0px 0px 55px 10px;
+    width: auto;
     font-size: 15px;
     height: 130px;
     border-left: 3px solid #664E88;
@@ -421,12 +454,11 @@ input{
   }
   
   .About{
-    margin: 0px 85px 0px 810px;
-    padding: 0px 0px 0px 0px;
-    display: grid;
+    padding: 50px 100px 0px 750px;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    width: auto;
     height: 200px;
-    width: 550px;
     text-align: justify;
   }
 
@@ -437,21 +469,21 @@ input{
   .Dots{
     display: flex;
     justify-content: right;
-    align-items: flex-start;
+    align-items: center;
     height: 0px;
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 100px 100px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
 
   .Dot{
     width: 130px;
-    padding-right: 50px;
   }
 
   .Skill {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-end;
     padding-top: 30px;
     padding-bottom: 300px;
@@ -460,7 +492,7 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 400px;
-    height: 85vh;
+    height: auto;
     width: 100%;
   }
   
@@ -557,7 +589,7 @@ input{
   }
   
   .Technologies{
-    margin: 0px 50px 500px 350px;
+    margin: 0px 0px 500px 300px;
     padding: 0px 0px 0px 0px;
     line-height: 20px;
     width: 50px;
@@ -604,18 +636,19 @@ input{
   }
 
   .projectcontainer{
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
     flex-wrap: wrap;
-    height: 90vh;
+    padding-bottom: 150px;
+    height: auto;
     width: 100%;
   }
   
   .my-projects{
-    font-size: 20px;
-    margin-left: 150px;
-    margin-bottom: 0px;
+    margin-left: 50px;
     margin-top: 150px;
-    padding-left: 10px;
+    margin-bottom: 150px;
+    font-size: 20px;
     color: #664E88;
     line-height: 15px;
     border-left: 3px solid #664E88;
@@ -630,16 +663,13 @@ input{
   }
 
   .proyect-image1{
-    width: 0px;
+    width: 450px;
     height: 0px;
-    margin: 0px 70px 0px 450px;
+    margin: 0px 200px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
   
   .Proyect1{
-    margin: 100px 0px 0px 0px;
-    padding-top: 50px;
-    padding-bottom: 6px;
     width: 450px;
   }
   
@@ -648,7 +678,7 @@ input{
     width: 400px;
     height: 150px;
     text-align: justify;
-    margin: 150px 0px 0px 450px;
+    margin: 70px 0px 0px 500px;
     font-size: 15px;
   }
   
@@ -657,8 +687,17 @@ input{
   }
   
   .proyect-button{
-    margin: 0px 0px 0px 950px;
-    padding-bottom: 1000px;
+    margin: 10px 0px 10px 400px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+
+  .descriptioncontainer{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -70px;
   }
   
   .contact{
@@ -668,13 +707,13 @@ input{
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     background-color: #E1E5EA;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 85vh;
+    height: auto;
   }
   
   .info h3{
@@ -690,12 +729,13 @@ input{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 150px;
+    margin-bottom: 100px;
     padding-top: 3px;
     padding-left: 0px;
     padding-right: 20px;
     background-color: white;
     width: 500px;
-    height: 60vh;
+    height: auto;
   }
   
   .box2{
@@ -730,13 +770,17 @@ input{
     padding: 100px 0px 0px 0px;
   }
   
+  .copycontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
   .copy{
     font-family: 'Roboto', sans-serif;
     color: white;
     height: 55px;
     background-color: #63B4B8;
-    margin-top: 180px;
-    width: 100%;
     padding: 5px 0px 5px 0px;
   }
 
