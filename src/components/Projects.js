@@ -19,8 +19,8 @@ const Projects = () => {
                 </p>
             </div>
             <div className='proyect-button'>
-            <a href='https://fervent-blackwell-cc377f.netlify.app/' target="_blank" rel="noopener noreferrer" className='box'>Visitar Sitio</a>
-            <a href='https://github.com/RobertoFlores132/RickAndMortyAPI' target="_blank" rel="noopener noreferrer" className='box'>Ver repositorio</a>
+            <a className='button1' href='https://fervent-blackwell-cc377f.netlify.app/' target="_blank" rel="noopener noreferrer" >Visitar Sitio</a>
+            <a className='button1' href='https://github.com/RobertoFlores132/RickAndMortyAPI' target="_blank" rel="noopener noreferrer" >Ver repositorio</a>
             </div>
             </div>
         </div>
