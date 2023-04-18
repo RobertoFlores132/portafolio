@@ -7,6 +7,17 @@ import dot3 from '../Images/puntos-3.svg'
 const Home = () => {
 
      const [showMenu, setShowMenu] = useState(false);
+     const [color, setColor] = useState(false)
+
+     const changeColor = (() => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+     });
+
+     window.addEventListener('scroll', changeColor);
 
     return (
     <div className='Home'>
@@ -20,7 +31,7 @@ const Home = () => {
             <Link to='Contact' spy={true} smooth={true} offset={50} duration={500}>Contacto</Link>
         </nav> : ''}
         </div>
-        <nav className='Navbar'>
+        <nav className={color ? 'Navbar Navbar-bg' : 'Navbar'}>
             <Link to='Home' spy={true} smooth={true} offset={50} duration={500}>Inicio</Link>
             <Link to='Aboutme' spy={true} smooth={true} offset={50} duration={500}>Sobre mi</Link>
             <Link to='Skills' spy={true} smooth={true} offset={50} duration={500}>Habilidades</Link>
