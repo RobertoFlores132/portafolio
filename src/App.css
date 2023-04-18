@@ -428,7 +428,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size:35px;
+    font-size: 25px;
     width: 60%;
     height: 7vh;
   }
