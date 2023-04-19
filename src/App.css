@@ -5,6 +5,7 @@
 .menu {
   margin-top: 0;
   position: fixed;
+  z-index: 5000;
   display: block;
   margin-right: 100%;
   color: #A9E4D7;
@@ -19,12 +20,14 @@
   display: block;
   cursor: pointer;
   padding: 10px 10px;
+  z-index: 5000;
 }
 
-.hambnav{
+.hambnav {
   background-color: #664E88;
   cursor: pointer;
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 20px;
@@ -32,13 +35,6 @@
   line-height: 10px;
   width: 250px;
   height: 100vh;
-}
-
-.hambnav.inactive{
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-20px);
-  transition: all 0.5s ease;
 }
 
 .hambnav a{
@@ -64,32 +60,31 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 107vh;
 }
 
-.dot3-1{
-  display: none;
+.Home h1{
+  font-size: 30px;
+  width: 250px;
+  height: 45px;
+  overflow: hidden; 
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .10em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-.dot3-2{
-  display: none;
+@keyframes typing {
+  from { width: 0 }
+  to { width: 250px }
 }
 
-.dots3{
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.dot3-3{
-  width: 70px;
-  padding-bottom: 10px;
-}
-
-.dot3-4{
-  width: 70px;
-  padding-bottom: 10px;
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
 
 .front {
@@ -113,20 +108,28 @@
   text-decoration: none;
 }
 
+.linkedinbttn{
+  margin-top: 30px;
+}
+
 .Profile{
   width: 100%;
   padding-top: 50px;
 }
 
 .imagecontainer{
-  width: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 .Image{
-  padding-top: 30px;
-  padding-bottom: 50px;
-  padding-left: 100%;
-  width: 350px;
+  width: 250px;
 }
 
 .Description{
@@ -171,7 +174,7 @@
 }
 
 .Title{
-  margin-left: 40px;
+  margin-left: 20px;
   padding-left: 10px;
   color: #A9E4D7;
   line-height: 15px;
@@ -180,12 +183,16 @@
   text-align: left;
 }
 
+.dotcontainer{
+  width: 30px;
+}
+
 .Dots2{
   float: right;
   margin-left: 70px;
   font-size: 30px;
   width: 80px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .List {
@@ -258,7 +265,7 @@
 
 .Technologies p{
   text-indent: 85px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 .icon-tec{
@@ -404,6 +411,8 @@
 .info h3{
   text-align: center;
   color: #664E88;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .info{
@@ -484,6 +493,7 @@ input{
 
   .Navbar{
     position: fixed;
+    z-index: 5000;
     top: 0;
     display: flex;
     align-items: center;
@@ -530,7 +540,7 @@ input{
   .title1{
     font-size: 35px;
   }
-   
+
   .Home{
     display: flex;
     flex-direction: column;
@@ -544,12 +554,28 @@ input{
     height: 100vh;
   }
   
-  h1{
+  .Home h1{
     font-size: 70px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+    width: 560px;
+    height: 65px;
+    overflow: hidden; 
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .10em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 560px }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
   }
   
   .front {
@@ -599,6 +625,7 @@ input{
 
   .linkedinbttn{
     height: auto;
+    margin-top: 50px;
   }
 
   .Profile{
@@ -610,7 +637,6 @@ input{
   }
 
   .imagecontainer{
-    width: 100%;
     height: 0;
     display: inline-flex;
     flex-wrap: wrap;
@@ -676,7 +702,7 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 400px;
-    height: auto;
+    height: 100vh;
     width: 100%;
   }
   
@@ -715,8 +741,7 @@ input{
   .List{
     font-size: 20px;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 150px;
+    justify-content: center;
     flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -778,7 +803,7 @@ input{
     padding: 0px 0px 500px 300px;
     line-height: 20px;
     width: 50px;
-    height: 0px;
+    height: 150px;
   }
 
   .icon-tec{
@@ -794,19 +819,17 @@ input{
   }
 
   .Technologies p{
-    margin-top: 0px;
+    margin-top: 40px;
     text-indent: 95px;
   }
   
   .bar{
     padding: 3px;
     width: 150px;
-    margin: 0px 0px 0px 90px;
+    margin: -10px 0px 0px 90px;
     height: 10px;
     background: #A9E4D7;
     border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 0px;
   }
   
   .progress {
@@ -944,11 +967,11 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
   }
   
   .info h3{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
     color: #664E88;
