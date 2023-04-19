@@ -8,12 +8,12 @@
   display: block;
   margin-right: 100%;
   color: #A9E4D7;
-  height: 2250px;
-  width: 150px;
+  height: 100vh;
 }
 
 .hamburger{
-  color: #63B4B8;
+  color: #A9E4D7;
+  position: fixed;
   background-color: #664e8800;
   border: none;
   display: block;
@@ -22,12 +22,29 @@
 }
 
 .hambnav{
+  background-color: #664E88;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 10px;
-  line-height: 100px;
+  padding-left: 20px;
+  padding-top: 100px;
+  line-height: 10px;
+  width: 250px;
+  height: 100vh;
+}
+
+.hambnav.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20px);
+  transition: all 0.5s ease;
+}
+
+.hambnav a{
+  height: 10px;
+  margin: 35px 0px;
+  font-size: 27px;
 }
 
 .fa-solid {
@@ -39,12 +56,13 @@
 }
  
 .Home{
-  position: inherit;
-  text-align: center; 
+  display: grid;
+  align-content: center;
+  text-align: center;
   background-image: url("./Images/header_Header\ imagen.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: -840px;
   width: 100%;
   height: 100vh;
 }
@@ -60,10 +78,8 @@
 .dots3{
   width: 100%;
   display: flex;
-  align-items: baseline;
-  position: absolute;
+  align-items: flex-end;
   justify-content: space-between;
-  bottom: 0;
 }
 
 .dot3-3{
@@ -77,9 +93,10 @@
 }
 
 .front {
-  margin-top: 0px;
-  padding-top: 250px;
-  padding-bottom: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   line-height: 50px;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -98,6 +115,7 @@
 
 .Profile{
   width: 100%;
+  padding-top: 50px;
 }
 
 .imagecontainer{
@@ -108,7 +126,7 @@
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 100%;
-  width: 250px;
+  width: 350px;
 }
 
 .Description{
@@ -142,7 +160,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding-top: 30px;
+  padding-top: 70px;
   background-color: #664E88;
   background-size: cover;
   background-repeat: no-repeat;
@@ -276,7 +294,7 @@
 
 .projectcontainer{
   width: 100%;
-
+  padding-top: 50px;
 }
 
 .my-projects{
@@ -380,7 +398,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .info h3{
@@ -510,12 +528,13 @@ input{
   }
 
   .title1{
-    margin-top: 450px;
     font-size: 35px;
   }
    
   .Home{
     display: flex;
+    flex-direction: column;
+    padding-top: 50px;
     text-align: center;
     justify-content: center;
     background-image: url("./Images/header_Header\ imagen.jpg");
@@ -540,7 +559,6 @@ input{
     display: flex;
     flex-direction: column;
     line-height: 50px;
-    padding-bottom: 300px;
     height: auto;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -584,7 +602,7 @@ input{
   }
 
   .Profile{
-    margin-top: 20px;
+    margin-top: 120px;
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
@@ -919,17 +937,19 @@ input{
     flex-direction: row-reverse;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0px;
     background-color: #E1E5EA;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
   }
   
   .info h3{
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     color: #664E88;
     font-size: 25px;
@@ -941,7 +961,7 @@ input{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding-top: 3px;
     padding-left: 0px;
     padding-right: 20px;

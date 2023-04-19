@@ -17,7 +17,7 @@ const Skills = () => {
             </div> 
             <div className='List'>
             <div className='Education'>
-                    <div className='icon-edu'>
+                    <div data-aos='fade-up' className='icon-edu'>
                     <img className='icon1' src={Icon1} alt="icon1" />
                     <h3><b>Desarrollador Web</b></h3>
                     </div>

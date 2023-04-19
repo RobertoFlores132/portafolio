@@ -4,7 +4,7 @@ import Form from '../Images/formulario.png';
 import Swal from 'sweetalert2';
 
 const Contact = () => {
-    
+
     const form = useRef();
 
     const sendEmail = (e) => {

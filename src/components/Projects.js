@@ -4,6 +4,7 @@ import Project2 from '../Images/Project2.png'
 import Project3 from '../Images/Project3.png'
 
 const Projects = () => {
+
     return (
         <div className='projectcontainer'>
             <div className='my-projects'>

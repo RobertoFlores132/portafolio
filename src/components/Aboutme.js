@@ -4,6 +4,7 @@ import Image from '../Images/profile-image.png'
 import Image2 from '../Images/puntos-1.svg'
 
 const Aboutme = () => {
+
     return (
         <div className='Profile'>
             <div className='imagecontainer'>
