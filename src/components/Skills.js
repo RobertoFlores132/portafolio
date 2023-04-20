@@ -43,6 +43,7 @@ const Skills = () => {
                     <p><i>Inglés:</i> B2</p>
             </div>
             <div data-aos="fade-up" className='Technologies'>
+                <div className='Technologies1'>
                     <div data-aos="fade-up" className='icon-tec'>
                         <img className='icon3' src={Icon3} alt="Icon3" />
                         <h3>Tecnologías</h3>
@@ -67,6 +68,8 @@ const Skills = () => {
                     <div data-aos="fade-up" className='bar'>
                     <div className='progress' style={{width: '60%'}}></div>
                     </div>
+                    </div>
+                    <div className='Technologies2'>
                     <p>NodeJS</p>
                     <div data-aos="fade-up" className='bar'>
                         <div className='progress' style={{width: '70%'}}></div>
@@ -82,6 +85,7 @@ const Skills = () => {
                     <p>Github</p>
                     <div data-aos="fade-up" className='bar'>
                         <div className='progress' style={{width: '90%'}}></div>
+                    </div>
                     </div>
                 </div>
             </div> 

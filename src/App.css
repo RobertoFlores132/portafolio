@@ -405,7 +405,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .info h3{
@@ -518,7 +518,7 @@ input{
     cursor: pointer;
   }
 
-  a:after{
+  .Navbar a:after{
     content: "";
     position: absolute;
     background-color: #A9E4D7;
@@ -529,7 +529,7 @@ input{
     transition: 0.3s;
   }
 
-  a:hover:after{
+  .Navbar a:hover:after{
     width: 100%;
   }
   
@@ -702,7 +702,7 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 400px;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
   }
   
@@ -742,6 +742,7 @@ input{
     font-size: 20px;
     display: flex;
     justify-content: center;
+    padding-right: 250px;
     flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -799,7 +800,9 @@ input{
   }
   
   .Technologies{
-    margin: 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    margin: 135px 0px 0px 0px;
     padding: 0px 0px 500px 300px;
     line-height: 20px;
     width: 50px;
@@ -819,7 +822,7 @@ input{
   }
 
   .Technologies p{
-    margin-top: 40px;
+    margin-top: 25px;
     text-indent: 95px;
   }
   
@@ -994,6 +997,7 @@ input{
   }
   
   .box2{
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
     background: #664E88;
     color: white;
